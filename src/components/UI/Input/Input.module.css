@@ -1,0 +1,23 @@
+.InputContainer {
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.InputContainer input, .InputContainer textarea {
+    width: 80%;
+}
+
+.InputContainer textarea {
+    height: 150px;
+}
+
+.InputContainer label {
+    min-width: 60px;
+    display: inline-block;
+}
+
+.InputContainer select {
+    width: 200px;
+}

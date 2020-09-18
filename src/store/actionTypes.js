@@ -1,0 +1,1 @@
+export const INIT_PRICES = 'INIT_PRICES';

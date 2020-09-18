@@ -1,0 +1,27 @@
+.Toolbar {
+    height: 65px;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 100;
+    background-color: white;
+    width: 100%;
+}
+
+.LogoContainer {
+    height: 100%;
+    margin-right: auto;
+}
+
+.LogoContainer img {
+    height: 100%;
+}
+
+@media (max-width: 700px) {
+    .LogoContainer {
+        height: 65%;
+        margin: auto auto auto 0;
+    }
+}

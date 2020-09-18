@@ -1,0 +1,12 @@
+.NavigationItems {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+@media (max-width: 900px) {
+    .NavigationItems {
+        flex-direction: column;
+    }
+}

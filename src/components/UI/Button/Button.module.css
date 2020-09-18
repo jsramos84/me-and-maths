@@ -1,0 +1,24 @@
+.Button {
+    text-decoration: none;
+    border: 2px solid #CC0000;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    transition: all 0.3s ease-out;
+}
+
+.Button:hover {
+    background-color: rgb(240, 0, 0) !important;
+    border: 2px solid rgb(240, 0, 0);
+    color: white !important;
+}
+
+@media (max-width: 600px) {
+    .Button {
+        padding: 5px 5px;
+        border-radius: 5px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+        width: auto;
+    }   
+}

@@ -1,0 +1,21 @@
+.Sections {
+    width: 80%;
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+@media (max-width: 900px) {
+    .Sections {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .Sections {
+        flex-direction: column;
+    }
+}

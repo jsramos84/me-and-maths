@@ -1,0 +1,40 @@
+.SideDrawer {
+    width: 250px;
+    min-height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    z-index: 200;
+}
+
+.SideDrawer-enter {
+    transform: translateX(-100%);
+}
+
+.SideDrawer-enter-active {
+    transform: translateX(0);
+    transition: all 400ms ease-out;
+}
+
+.SideDrawer-enter-done {
+    transform: translateX(0);
+}
+
+.SideDrawer-exit {
+    transform: translateX(0);
+}
+
+.SideDrawer-exit-active {
+    transform: translateX(-100%);
+    transition: all 400ms ease-out;
+}
+
+.LogoContainer {
+    width: 100%;
+}
+
+.LogoContainer img {
+    width: 100%;
+}

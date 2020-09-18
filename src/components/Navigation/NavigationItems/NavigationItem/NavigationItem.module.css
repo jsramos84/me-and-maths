@@ -1,0 +1,47 @@
+.NavigationItem a {
+    height: 100%;
+    cursor: pointer;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(#CC0000, #CC0000), linear-gradient(transparent, transparent);
+    background-size: 0 2px, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: all .2s ease-out;
+    text-decoration: none;  
+}
+
+.NavigationItem a:hover {
+    background-size: 100% 2px, auto;
+    color: #CC0000;
+}
+
+.Active, .Active a {
+    border-bottom: 1px solid #CC0000;
+    color: #CC0000
+}
+
+.Active:hover, .Active a:hover {
+    background-size: 0 2px, auto;
+    transition: none 0s ease-out;
+
+}
+
+@media (max-width: 900px) {
+    .NavigationItem a {
+        display: flex;
+        justify-content: center;
+        color: #d3d3d3;
+        margin: 10px 0;
+        background-image: none;
+        background-size: 0;
+        background-repeat: no-repeat;
+        background-position: initial;
+        border-bottom: none;
+    }
+
+    .Active {
+        border-bottom: none;
+    }
+}

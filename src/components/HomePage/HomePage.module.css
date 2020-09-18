@@ -1,0 +1,36 @@
+.Caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: auto !important;
+    width: 100%;
+    padding: 20px 5%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7)
+}
+
+.Caption h1, .Caption h2 {
+    text-align: left;
+    color: rgb(200, 200, 200);
+}
+
+.ButtonContainer {
+    height: auto !important;
+}
+
+@media (max-width: 600px) {
+    .ButtonContainer {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        justify-content: center;
+        margin: auto;
+    }
+    .ButtonContainer a {
+        text-align: center;
+    }
+    .Caption h1, .Caption h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}

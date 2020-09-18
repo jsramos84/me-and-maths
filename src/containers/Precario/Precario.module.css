@@ -1,0 +1,125 @@
+.ImageContainer {
+    width: 25%;
+}
+
+.ImageContainer img {
+    width: 100%;
+}
+
+.FormContainer {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.Form {
+    display: flex;
+    justify-content: center;
+    border-radius: 7px;
+}
+
+.Form form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(233, 233, 233);
+    border-radius: 7px 0 0 7px;
+    padding: 5px 10px;
+}
+
+.FormContainer h3 {
+    text-align: left;
+}
+
+.FormContainer h3:after {
+    content: "";
+    display: block;
+    height: 0.5px;
+    width: 90%;
+    border-top: 2px solid #CC0000;
+}
+
+.Price {
+    border-radius: 0 7px 7px 0;
+    border-left: 2px solid rgb(200, 200, 200);
+    padding: 5px 10px;
+    min-width: 200px;
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Price h2 {
+    color: #CC0000;
+    line-height: 0.7;
+}
+
+.Price span, .Price p {
+    font-size: 14px;
+}
+
+strong {
+    font-size: 100%;
+}
+
+.Price h2 {
+    margin-bottom: 5px;
+}
+
+.Price p {
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+    .Form {
+        flex-direction: column;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .Form form {
+        border: 0;
+        border-radius: 0;
+    }
+    .Price {
+        padding-top: 15px;
+        border: 0;
+        border-top: 2px solid rgb(200, 200, 200);
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .Form {
+        max-width: 260px;
+    }
+    
+    .ImageContainer {
+        width: 100%;
+    }
+    .FormContainer {
+        width: 100%;
+        padding-left: 0px;
+    }
+    .ImageContainer {
+        overflow: hidden;
+        margin-bottom: 20px;
+        width: 100%;
+        max-height: 250px;
+    }
+}
+@media (max-width: 400px) {
+    .ImageContainer {
+        min-height: 250px;
+    }
+    
+    form div {
+        flex-direction: column;
+        margin: 5px auto !important;
+    }
+    
+    form select {
+        width: 100% !important;
+    }
+}

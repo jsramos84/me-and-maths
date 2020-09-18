@@ -140,42 +140,20 @@ class App extends Component {
   }
 
   render() {
-    let sectionExplicacoes = (
-      <Sections>
-        <Explicacoes content={this.state.explicacoes}/>
-      </Sections>
-    );
-    
-    let sectionPrecario = (
-      <Sections>
-        <Precario content={this.state.precario}/>
-      </Sections>
-    );
-
-    let quemSomos = (
-      <Sections>
-        <QuemSomos content={this.state.quemSomos}/>
-      </Sections>
-    );
-
-    let contactos = (
-      <Sections>
-        <Contactos content={this.state.contactos}/>
-      </Sections>
-    );
-
     return (
-        <Layout logo={logo} content={this.state.header}>
-            <Suspense fallback={<div>Loading...</div>}>
-              <Switch>
-                <Route exact path="/" render={() => <HomePage content={this.state.homePage} />}/>
-                <Route exact path={this.state.header.explicacoes} render={() => sectionExplicacoes}/>
-                <Route exact path={this.state.header.precario} render={() => sectionPrecario}/>
-                <Route exact path={this.state.header.quemSomos} render={() => quemSomos}/>
-                <Route exact path={this.state.header.contactos} render={() => contactos}/>
-              </Switch>
-            </Suspense>
-        </Layout>
+      <Layout logo={logo} content={this.state.header}>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Switch>
+              <Route exact path="/" render={() => <HomePage content={this.state.homePage} />}/>
+              <Sections>
+                <Route exact path={this.state.header.explicacoes} render={() => <Explicacoes content={this.state.explicacoes}/>}/>
+                <Route exact path={this.state.header.precario} render={() => <Precario content={this.state.precario}/>}/>
+                <Route exact path={this.state.header.quemSomos} render={() => <QuemSomos content={this.state.quemSomos}/>}/>
+                <Route exact path={this.state.header.contactos} render={() => <Contactos content={this.state.contactos}/>}/>
+              </Sections>
+            </Switch>
+          </Suspense>
+      </Layout>
     );
   }
 }
